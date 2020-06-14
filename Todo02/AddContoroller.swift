@@ -8,8 +8,17 @@
 
 import UIKit
 
+var TodoKobetunonakami = [String]()
+
 class AddContoroller: UIViewController {
 
+    @IBOutlet weak var TodoText: UITextField!
+    @IBAction func Enter(_ sender: Any) {
+        TodoKobetunonakami.append(TodoText.text!)
+        TodoText.text = ""
+        UserDefaults.standard.set(TodoKobetunonakami, forKey: "TodoList")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
