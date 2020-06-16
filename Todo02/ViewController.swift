@@ -27,7 +27,17 @@ class ViewController: UIViewController ,UITableViewDelegate ,UITableViewDataSour
             TodoKobetunonakami = UserDefaults.standard.object(forKey: "TodoList") as! [String]
         }
     }
+    
+    //スライドして削除を追加
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 
-
+        if editingStyle == .delete {
+            TodoKobetunonakami.remove(at: indexPath.row) // 先にリストから削除する
+        // テーブルの高さが変わるのでこれで囲む
+        tableView.beginUpdates()
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+        tableView.endUpdates()
+      }
+    }
 }
 
