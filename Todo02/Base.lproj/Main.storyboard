@@ -10,9 +10,9 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Todo02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Todo02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OqI-ea-Vt1">
@@ -60,13 +60,13 @@
         <!--Add Contoroller-->
         <scene sceneID="5RO-mL-TG2">
             <objects>
-                <viewController id="pPK-an-OKC" customClass="AddContoroller" customModule="Todo02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="pPK-an-OKC" customClass="AddContoroller" customModule="Todo02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2E8-p2-Vsv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wj9-Ii-7NA">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="32" width="414" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Edit" id="QR2-JY-VNQ">
@@ -79,15 +79,16 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lN2-gJ-fm7">
-                                <rect key="frame" x="189" y="367" width="37" height="30"/>
+                                <rect key="frame" x="152" y="349" width="109" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
-                                    <action selector="Enter:" destination="pPK-an-OKC" eventType="touchUpInside" id="S0N-Kh-kXx"/>
+                                    <action selector="Enter:" destination="pPK-an-OKC" eventType="touchUpInside" id="tUe-6x-M0S"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKu-iS-8Lw">
-                                <rect key="frame" x="76" y="278" width="263" height="34"/>
+                                <rect key="frame" x="77" y="278" width="259" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -98,7 +99,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="EE6-Pe-ArC"/>
                     <connections>
-                        <outlet property="Enter" destination="lN2-gJ-fm7" id="Ipu-U0-g3u"/>
                         <outlet property="TodoText" destination="oKu-iS-8Lw" id="NDc-p0-q18"/>
                     </connections>
                 </viewController>

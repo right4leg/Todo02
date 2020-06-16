@@ -13,6 +13,7 @@
 		A3DFB0DB2490F6EC003ED9A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DFB0D92490F6EC003ED9A7 /* Main.storyboard */; };
 		A3DFB0DD2490F6EF003ED9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DFB0DC2490F6EF003ED9A7 /* Assets.xcassets */; };
 		A3DFB0E02490F6EF003ED9A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DFB0DE2490F6EF003ED9A7 /* LaunchScreen.storyboard */; };
+		A3DFB0E82490FC51003ED9A7 /* AddContoroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFB0E72490FC51003ED9A7 /* AddContoroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A3DFB0DC2490F6EF003ED9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3DFB0DF2490F6EF003ED9A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3DFB0E12490F6EF003ED9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DFB0E72490FC51003ED9A7 /* AddContoroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContoroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A3DFB0D52490F6EC003ED9A7 /* SceneDelegate.swift */,
 				A3DFB0D72490F6EC003ED9A7 /* ViewController.swift */,
 				A3DFB0D92490F6EC003ED9A7 /* Main.storyboard */,
+				A3DFB0E72490FC51003ED9A7 /* AddContoroller.swift */,
 				A3DFB0DC2490F6EF003ED9A7 /* Assets.xcassets */,
 				A3DFB0DE2490F6EF003ED9A7 /* LaunchScreen.storyboard */,
 				A3DFB0E12490F6EF003ED9A7 /* Info.plist */,
@@ -141,6 +144,7 @@
 				A3DFB0D82490F6EC003ED9A7 /* ViewController.swift in Sources */,
 				A3DFB0D42490F6EC003ED9A7 /* AppDelegate.swift in Sources */,
 				A3DFB0D62490F6EC003ED9A7 /* SceneDelegate.swift in Sources */,
+				A3DFB0E82490FC51003ED9A7 /* AddContoroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
